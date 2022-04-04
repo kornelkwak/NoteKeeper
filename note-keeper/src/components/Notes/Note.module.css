@@ -1,0 +1,13 @@
+.note {
+    background-color: rgb(42, 165, 104);
+    height: auto;
+    min-height: 100px; 
+    margin: 20px;
+    border-radius:15px;
+    word-wrap: break-word;
+    
+}
+
+.note:hover {
+    box-shadow: 0 0 1em black;
+}

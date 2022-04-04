@@ -1,78 +1,17 @@
 import React from "react";
 import classes from './TableOfNotes.module.css';
+import Note from './Note.js';
 
-const TableOfNotes = () => {
+const TableOfNotes = (props) => {
+    console.log(props);
     return (
         <div className={classes.table}>
-            <div className={classes.note}>
-
-            </div>
-            <div className={classes.note}>
-
-            </div>
-            <div className={classes.note}>
-
-            </div>
-            <div className={classes.note}>
-
-            </div>
-            <div className={classes.note}>
-
-            </div>
-            <div className={classes.note}>
-
-            </div>
-            <div className={classes.note}>
-
-            </div>
-            <div className={classes.note}>
-
-            </div>
-            <div className={classes.note}>
-
-            </div>
-            <div className={classes.note}>
-
-            </div>
-            <div className={classes.note}>
-
-            </div>
-            <div className={classes.note}>
-
-            </div>
-            <div className={classes.note}>
-
-            </div>
-            <div className={classes.note}>
-
-            </div>
-            <div className={classes.note}>
-
-            </div>
-            <div className={classes.note}>
-
-            </div>
-            <div className={classes.note}>
-
-            </div>
-            <div className={classes.note}>
-
-            </div>
-            <div className={classes.note}>
-
-            </div>
-            <div className={classes.note}>
-
-            </div>
-            <div className={classes.note}>
-
-            </div>
-            <div className={classes.note}>
-
-            </div>
-            <div className={classes.note}>
-
-            </div>
+            {props.notes.map(item => 
+                <Note title = {item.title}
+                      content = {item.content}
+                      key = {item.key}
+                />
+            )}
         </div>    
     );
 }

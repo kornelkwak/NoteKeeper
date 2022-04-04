@@ -9,12 +9,7 @@
     border: 15px solid rgba(43, 23, 1, 0.904);
     overflow:hidden;
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 30% 30% 30%;
 
 }
 
-.note {
-    background-color: brown;
-    height: 100px;
-    margin: 20px;
-}
