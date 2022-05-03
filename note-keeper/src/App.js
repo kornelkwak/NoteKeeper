@@ -5,48 +5,33 @@ import TableOfNotes from './components/Notes/TableOfNotes';
 const notesList = [
   {
     title: 'notatka 1',
-    content: 'sadfasfsfasfasdfasdfsadf asfdasfawrfgsdfasdfasfadsfadsfasdfasdfadsfadsfadsfasdfasdfdsafasdfsadfsadfasdfadsasdfsdfsadf asfdasfasfasfsfsf asdfasdfsdafdsawrfgsdfasdfasfadsfadsfasdfasdfadsfadsfadsfasdfasdfdsafasdfsadfsadfasdfadsasdfsdfsadf asfdasfasfasfsfsf asdfasdfsdafdsawrfgsdfasdfasfadsfadsfasdfasdfadsfadsfadsfasdfasdfdsafasdfsadfsadfasdfadsasdfsdfsadf asfdasfasfasfsfsf asdfasdfsdafdsawrfgsdfasdfasfadsfadsfasdfasdfadsfadsfadsfasdfasdfdsafasdfsadfsadfasdfadsasdfsdfsadf asfdasfasfasfsfsf asdfasdfsdafdsawrfgsdfasdfasfadsfadsfasdfasdfadsfadsfadsfasdfasdfdsafasdfsadfsadfasdfadsasdfsdfsadf asfdasfasfasfsfsf asdfasdfsdafdsasfasfsfsf asdfasdfsdafdsafad asdfasdfasdfasdf asdfasdfasfasf asdfasdfasdf',
+    content: 'sadfasfsfasfasdfasdfsadf asfdasfawrfgsdfasdfasfadsfadsfasdfasdfadsfadsfadsfasdfasdfdsafasdfsadfsadfasdfadsasdfsdfsadf asfdasfasfasfsfsf asdfasdfsdafdsawrfgsdfasdfasfadsfadsfasdfasdfadsfadsfadsfasdfasdfdsafasdfsadfsadfasdfadsasdfsdfsadf asfdasfasfasfsfsf asdfasdfsdafdsawrfgsdfasdfasfadsfadsfasdfasdfadsfadsfadsfasdfasdfdsafasdfsadfsadfasdfadsasdfsdfsadf asfdasfasfasfsfsf asdfasdfsdafdsawrfgsdfasdfasfadsfadsfasdfasdfadsfadsfadsfasdfasdfdsafasdfsadfsadfasdfadsasdfsdfsadf asfdasfasfasfsfsf asdfasdfsdafdsawrfgsdfasdfasfadsfadsfasdfasdfadsfadsfadsfasdfasdfdsafasdfsadfsadfasdfadsasdfsdfsadf asfdasfasfasfsfsf asdfasdfsdafdsasfasfsfsf asdfasdfsdafsafad asdfasdfasdfasdf asdfasdfasfasf as',
     key: 1,
+    i: 1, x: 1, y: 1, w: 1, h: 6
   },
   {
     title: 'notatka 2',
     content: 'sadfasfsfasfasdfasdfsadf asfdasfasfasfsfsf asdfasdfsdafdsafad asdfasdfasdfasdf asdfasdfasfasf asdfasdfasdf',
     key: 2,
+    i: 2, x: 6, y: 1, w: 1, h: 6
   },
   {
     title: 'notatka 3',
     content: 'sadfasfsfasfasdfasdfsadf asfdasfasfasfsfsf asdfasdfsdafdsafad asdfasdfasdfasdf asdfasdfasfasf asdfasdfasdf',
     key: 3,
+    i: 3, x: 0, y: 0, w: 1, h: 6
   },
   {
     title: 'notatka 4',
     content: 'sadfasfsfasfasdfasdfsadf asfdasfasfasfsfsf asdfasdfsdafdsafad asdfasdfasd',
     key: 4,
+    i: 4, x: 2, y: 1, w: 1, h: 6
   },
   {
     title: 'notatka 5',
     content: 'sadfasfsfasfasdfasdfsadf asfdasfasfasfsfsf asdfasdfsdafdsafad asdfasdfasdfasdf asdfasdfasfasf asdfasdfasdf',
     key: 5,
-  },
-  {
-    title: 'notatka 5',
-    content: 'sadfasfsfasfasdfasdfsadf asfdasfasfasfsfsf asdfasdfsdafdsafad asdfasdfasdfasdf asdfasdfasfasf asdfasdfasdf',
-    key: 6,
-  },
-  {
-    title: 'notatka 5',
-    content: 'sadfasfsfasfasdfasdfsadf asfdasfasfasfsfsf asdfasdfsdafdsafad asdfasdfasdfasdf asdfasdfasfasf asdfasdfasdf',
-    key: 7,
-  },
-  {
-    title: 'notatka 5',
-    content: 'sadfasfsfasfasdfasdfwrfgsdfasdfasfadsfadsfasdfasdfadsfadsfadsfasdfasdfdsafasdfsadfsadfasdfadsasdfsdfsadf asfdasfasfasfsfsf asdfasdfsdafdsawrfgsdfasdfasfadsfadsfasdfasdfadsfadsfadsfasdfasdfdsafasdfsadfsadfasdfadsasdfsdfsadf asfdasfasfasfsfsf asdfasdfsdafdsawrfgsdfasdfasfadsfadsfasdfasdfadsfadsfadsfasdfasdfdsafasdfsadfsadfasdfadsasdfsdfsadf asfdasfasfasfsfsf asdfasdfsdafdsasadf asfdasfasfasfsfsf asdfasdfsdafdsafad asdfasdfasdfasdf asdfasdfasfasf asdfasdfasdf',
-    key: 8,
-  },
-  {
-    title: 'notatka 5',
-    content: 'sadfasfsfasfasdfaawrfgsdfasdfasfadsfadsfasdfasdfadsfadsfadsfasdfasdfdsafasdfsadfsadfasdfadsasdfsdfsadf asfdasfasfasfsfsf asdfasdfsdafdsawrfgsdfasdfasfadsfadsfasdfasdfadsfadsfadsfasdfasdfdsafasdfsadfsadfasdfadsasdfsdfsadf asfdasfasfasfsfsf asdfasdfsdafdsawrfgsdfasdfasfadsfadsfasdfasdfadsfadsfadsfasdfasdfdsafasdfsadfsadfasdfadsasdfsdfsadf asfdasfasfasfsfsf asdfasdfsdafdsawrfgsdfasdfasfadsfadsfasdfasdfadsfadsfadsfasdfasdfdsafasdfsadfsadfasdfadsasdfsdfsadf asfdasfasfasfsfsf asdfasdfsdafdsawrfgsdfasdfasfadsfadsfasdfasdfadsfadsfadsfasdfasdfdsafasdfsadfsadfasdfadsasdfsdfsadf asfdasfasfasfsfsf asdfasdfsdafdsawrfgsdfasdfasfadsfadsfasdfasdfadsfadsfadsfasdfasdfdsafasdfsadfsadfasdfadsasdfsdfsadf asfdasfasfasfsfsf asdfasdfsdafdsafad asdfasdfasdfasdf asdfasdfasfasf asdfasdfasdf',
-    key: 9,
+    i: 5, x: 0, y: 1, w: 1, h: 6
   },
 ]
 
