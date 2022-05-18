@@ -1,12 +1,12 @@
 import React from "react";
 import classes from './Note.module.css';
+//import Draggable from "react-draggable";
 //import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const Note = React.forwardRef((props, ref) => {
+const Note = (props) => {
     return (
-        <div className = {classes.note} ref={ref}
-             data-grid={{ x: 1, y: 0, w: 3, h: 2}}
-        >
+        //<Draggable>  
+        <div className = {classes.note}>
             <h2>{props.title}</h2>
             <hr />
             <p>{props.content}</p>
@@ -14,7 +14,8 @@ const Note = React.forwardRef((props, ref) => {
             <div className = {classes.footer}>
             </div>    
         </div>    
+        //</Draggable>  
     )
-});
+};
  
 export default Note;

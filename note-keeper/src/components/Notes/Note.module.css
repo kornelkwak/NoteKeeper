@@ -1,16 +1,20 @@
 .note {
-    background-color: rgb(42, 165, 104);
-    height: auto;
-    min-height: 100px; 
-    /* margin: 20px; */
-    /* border-radius:15px; */
+    height: 100%;
+    width: 100%;
+    padding: 0.5em;
     word-wrap: break-word;
-    padding:10px;
-    width: 300px;
+    box-sizing: border-box;
+    background-color: rgb(42, 165, 104);
+    border-radius: 5px;
 }
 
 .note:hover {
     box-shadow: 0 0 1em black;
+}
+
+p {
+    overflow-y:auto;
+    height:60%;
 }
 
 hr {
